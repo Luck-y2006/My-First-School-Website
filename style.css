@@ -1,0 +1,360 @@
+
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #263348;
+    line-height: 1.7;
+    background: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+section {
+    scroll-margin-top: 85px;
+}
+
+
+/* HEADER */
+
+.header {
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.navbar {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #102d50;
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #c59b45;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #263348;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #c59b45;
+}
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 510px;
+    display: flex;
+    align-items: center;
+    color: white;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(9, 30, 55, 0.95),
+            rgba(9, 30, 55, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1562774053-701939374585?w=1600")
+        center/cover no-repeat;
+}
+
+.hero-content {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.welcome,
+.section-label {
+    color: #c59b45;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    max-width: 700px;
+    font-size: clamp(36px, 6vw, 60px);
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #e1bd76;
+}
+
+.hero-description {
+    max-width: 620px;
+    color: #e0e7ef;
+    margin-bottom: 28px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    padding: 12px 23px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background: #c59b45;
+    color: #102d50;
+}
+
+.btn-primary:hover {
+    background: #e1bd76;
+}
+
+.btn-outline {
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #102d50;
+}
+
+
+/* GENERAL SECTIONS */
+
+.section {
+    padding: 85px 0;
+    text-align: center;
+}
+
+.section h2,
+.admissions-section h2,
+.contact-section h2 {
+    font-size: 34px;
+    color: #102d50;
+    margin: 12px 0;
+}
+
+.section-description {
+    max-width: 750px;
+    margin: 0 auto 35px;
+    color: #68758a;
+}
+
+
+/* FEATURES */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.feature-card {
+    padding: 30px 20px;
+    border: 1px solid #e6eaf0;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+.feature-card h3 {
+    color: #102d50;
+    margin-bottom: 10px;
+}
+
+
+/* ADMISSIONS */
+
+.admissions-section {
+    padding: 75px 0;
+    text-align: center;
+    background: #f1f5f9;
+}
+
+.admissions-section p {
+    margin: 15px 0 25px;
+}
+
+
+/* ANNOUNCEMENTS */
+
+.announcement-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+    text-align: left;
+}
+
+.announcement-card {
+    padding: 25px;
+    border: 1px solid #e5eaf0;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+}
+
+.announcement-card h3 {
+    color: #102d50;
+    margin: 15px 0 8px;
+}
+
+.announcement-card p {
+    color: #68758a;
+    font-size: 14px;
+}
+
+.announcement-card small {
+    display: block;
+    margin-top: 15px;
+    color: #8a94a3;
+}
+
+.notice-tag {
+    display: inline-block;
+    background: #e7f5eb;
+    color: #237b43;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.notice-tag.exam {
+    background: #e8f0fc;
+    color: #285b9a;
+}
+
+.notice-tag.career {
+    background: #fff2df;
+    color: #a56817;
+}
+
+
+/* CONTACT */
+
+.contact-section {
+    padding: 75px 0;
+    text-align: center;
+    background: #f8fafc;
+}
+
+.contact-section > .container > p {
+    margin: 10px auto;
+}
+
+.contact-details {
+    margin-top: 25px;
+    color: #526176;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background: #102d50;
+    color: white;
+    text-align: center;
+    padding: 35px 0;
+}
+
+.footer h3 {
+    color: #e1bd76;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 13px;
+    margin: 7px 0;
+    color: #d4deea;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        background: white;
+        flex-direction: column;
+        gap: 18px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .features,
+    .announcement-list {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .section h2,
+    .admissions-section h2,
+    .contact-section h2 {
+        font-size: 28px;
+    }
+}
